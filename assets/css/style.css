@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+a
+{
+	color:inherit;
+	text-decoration:none;
+}
+
+body
+{
+	background-color:#000000;
+	font-family:'Roboto', sans-serif;
+	font-size:16px;
+}
+
+/*Custom button*/
+.custom-button-red
+{
+	background-color:#e30b14;
+	color:white;
+}
+
+.custom-button-red:hover
+{
+	background-color:red;
+	color:white;
+}
+
+/*Header*/
+
+header
+{
+	background-image:linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 1) 100%), url('../img/netflix-banner.jpg');
+	background-size:cover;
+	background-repeat:no-repeat;
+	width:100%;
+	position:relative;
+	border-bottom:8px solid #222222;
+}
+
+header .logo
+{
+	height:100px;
+}
+
+header h1
+{
+	color:white;
+	font-size:3.125rem;
+}
+
+header h2
+{
+	color:white;
+	font-size:28px;
+	font-weight:300;
+}
+
+header h3
+{
+	color:white;
+	font-size:21px;
+	font-weight:300;
+}
+
+header input
+{
+	height:63px;
+}
+
+header .header-content
+{
+	margin:120px auto;
+	width:100%;
+	max-width:950px;
+}
+
+/*Stories*/
+.story-container
+{
+	border-bottom:8px solid #222222;
+}
+
+.story-container h1
+{
+	color:white;
+	font-size:3.125rem;
+}
+
+.story-container h2
+{
+	color:white;
+	font-size:1.625rem;
+	font-weight:300;
+}
+
+.story-container img
+{
+	width:100%;
+}
+
+/*Faq*/
+.faq
+{
+	padding:50px 0;
+	color:#fff;
+	border-bottom:8px solid #222222;
+}
+
+body > section.faq > div > div > div > h1
+{
+	font-size:3.125rem;
+	line-height:1.1;
+	margin-bottom:2rem;
+	text-align:center;
+
+}
+
+
+.faq .card
+{
+	background-color:#303030;
+}
+
+.faq button
+{
+	font-size:28px;
+	font-weight:300;
+	text-transform:uppercase;
+}
+
+.faq h3
+{
+	color:white;
+	font-size:21px;
+	font-weight:300;
+}
+
+.faq .accordion-text
+{
+	text-align:left;
+	color:white;
+	font-size:1.625rem;
+	font-weight:400;
+}
+.e-mail-area{
+	margin: 2rem auto;
+	padding:0 20%;
+}
+
+
+footer a, p
+{
+	color:#757575;
+}
+
+footer a:hover
+{
+	text-decoration:underline;
+	color:#757575;
+}
+
+footer ul li a
+{
+	font-size:13px;
+}
+
+/*Responsive*/
+
+/*lg screen*/
+@media (max-width:992px)
+{
+	header h1
+	{
+		font-size:3.125rem;
+	}
+
+	header h2
+	{
+		font-size:1.625rem;
+	}
+	header h3{
+		font-size:21px;
+	}
+	.input-group input{
+		width:90%!important;
+		margin:15px auto;
+
+	}
+	.input-group button{
+		font-size:14px;
+		min-width:40px;
+		padding:1em 1em;
+		line-height:initial;
+		margin:0 auto !important;
+	}
+}
+
+
+/*Tablet*/
+@media (max-width:768px)
+{
+	body > header > div > div:nth-child(2) > div{
+		width:85%!important;
+	}
+	header h1
+	{
+		font-size:3.125rem;
+	}
+
+	header h2
+	{
+		font-size:1.625rem;
+	}
+	header h3{
+		font-size:21px;
+	}
+	.input-group{
+		flex-direction:column;
+	}
+	.input-group input{
+		width:70%!important;
+		margin:15px auto;
+
+	}
+	.input-group button{
+		font-size:1rem;
+		min-width:40px;
+		padding:1em 1em;
+		line-height:initial;
+		margin:0 auto !important;
+	}
+	/*story container*/
+
+	.story-container{
+		padding: 50px 5% !important;
+		text-align:center;
+	}
+	.story-container h1{
+		font-size:2.5rem;
+		font-weight:bold;
+		line-height: 1.1;
+		margin-bottom: .5rem;
+	}
+	.story-container h2{
+		font-size: 1.25rem;
+		font-weight: 400;
+
+	}
+	.story-container h2, h3, h4, h5{
+		margin: .75em 0 .25em;
+	}
+	/*Faq*/
+	.faq h1{
+		font-size:2.5rem !important;
+		line-height:1.1 !important;
+		margin-bottom:1rem !important;
+	}
+	.faq h2{
+		font-weight:400!important;
+		font:inherit;
+	}
+	.faq .accordion-text{
+		font-size:1.25rem;
+		font-weight:400;
+	}
+	.faq h3{
+		font-size:18px;
+		text-align:center;
+	}
+	.e-mail-area{
+		padding:  5%;
+	}
+
+	footer .col-md-3{
+		width:20%;
+	}
+}
+
+/*Mobile*/
+@media (max-width:576px)
+{
+	/*Header*/
+	header h1
+	{
+		font-size:1.125rem;
+	}
+
+	header h2
+	{
+		font-size:1.125rem;
+	}
+
+
+	.input-group{
+		flex-direction:column;
+	}
+	.input-group input{
+		width:90%!important;
+		margin:15px auto;
+
+	}
+
+	.input-group button{
+		font-size:1rem;
+		min-width:40px;
+		padding:1em 1em;
+		line-height:initial;
+		margin:0 auto !important;
+	}
+
+
+	/*Story container*/
+
+	.story-container{
+		padding: 50px 5% !important;
+		text-align:center;
+	}
+	.story-container h1{
+		font-size: 1.625rem;
+		font-weight:bold;
+		line-height: 1.1;
+		margin-bottom: .5rem;
+
+	}
+	.story-container h2{
+		font-size: 1.125rem;
+		font-weight:400;
+
+
+	}
+
+	/*faq*/
+
+	.faq h1{
+		font-size:2.5rem !important;
+		line-height:1.1 !important;
+		margin-bottom:15px !important;
+	}
+	.faq h2{
+		font-weight:400!important;
+		font:inherit;
+	}
+	.faq .accordion-text{
+		font-size:1.125rem;
+	}
+	.faq h3{
+		font-size:18px;
+		text-align:center;
+	}
+	.e-mail-area{
+		padding:  5%;
+	}
+	footer .col-md-3{
+		width:20%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
